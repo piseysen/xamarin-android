@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_DarwinMonoFramework>MonoFramework-MDK-4.9.0.1801.macos10.xamarin.universal.pkg</_DarwinMonoFramework>
+    <_DarwinMonoFramework>MonoFramework-MDK-4.9.0.1.macos10.xamarin.universal.pkg</_DarwinMonoFramework>
     <_AptGetInstall>apt-get -f -u install</_AptGetInstall>
   </PropertyGroup>
   <ItemGroup>
@@ -60,7 +60,7 @@
       <MinimumVersion>4.9.0</MinimumVersion>
       <MaximumVersion>4.9.99</MaximumVersion>
       <CurrentVersionCommand>$(MSBuildThisFileDirectory)..\scripts\mono-version</CurrentVersionCommand>
-      <DarwinMinimumUrl>https://bosstoragemirror.blob.core.windows.net/wrench/mono-2017-02/76/76da2e9ed87f5ef910ca4b62edddd5e118525c53/$(_DarwinMonoFramework)</DarwinMinimumUrl>
+      <DarwinMinimumUrl>https://bosstoragemirror.blob.core.windows.net/wrench/mono-2017-02/87/87a92c89c248a1a1eb1c1fe41bf9c4eda60df20a/$(_DarwinMonoFramework)</DarwinMinimumUrl>
       <DarwinInstall>installer -pkg "$(AndroidToolchainCacheDirectory)\$(_DarwinMonoFramework)" -target /</DarwinInstall>
     </RequiredProgram>
   </ItemGroup>
